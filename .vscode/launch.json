@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Debug (arm64e)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/dna",  // 你的二进制文件路径
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [
+              {
+                "description": "Enable pretty-printing for lldb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+              }
+            ],
+            "miDebuggerPath": "/usr/bin/lldb",
+            "miDebuggerArgs": "-arch arm64e",  // 设置 arm64e 架构
+            "logging": { "moduleLoad": false },
+            "preLaunchTask": "",
+            "sourceFileMap": {}
+          }
+    ],
+    "version": "2.0.0"
+}
