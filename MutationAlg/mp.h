@@ -62,7 +62,7 @@ public:
         return new_dna;
     }
 
-    // DNA 碱基随机突变
+    // Random mutation of DNA bases
     char mutateBase(char base) {
         string bases = "ACGT";
         char newBase;

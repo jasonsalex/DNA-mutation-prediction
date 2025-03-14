@@ -1,10 +1,11 @@
 {
     "configurations": [
+      
         {
             "name": "Debug (arm64e)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/dna",  // 你的二进制文件路径
+            "program": "${workspaceFolder}/main",  // Path to your binary file
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -19,7 +20,7 @@
               }
             ],
             "miDebuggerPath": "/usr/bin/lldb",
-            "miDebuggerArgs": "-arch arm64e",  // 设置 arm64e 架构
+            "miDebuggerArgs": "-arch arm64e",  // Set architecture to arm64e
             "logging": { "moduleLoad": false },
             "preLaunchTask": "",
             "sourceFileMap": {}
